@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonardo DiCaprio</title>
+
+    <link rel="stylesheet" href="styles/pico.min.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- a{Skip to main content}+header+main#main-content+footer -->
+
+    <header class="container">
+      <nav class="container">
+        <a href="#main-content">Skip to main content</a>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </nav>
+
+      <!-- figure>img+figcaption{Leonardo DiCaprio being sexy} -->
+      <figure>
+        <img
+          src="/"
+          alt="A man wearing a black suit and with a goat beard is staring directly at you. There is a dark background."
+        />
+        <figcaption>Leonardo DiCaprio being sexy</figcaption>
+      </figure>
+    </header>
+
+    <main class="container" id="main-content">
+      <!-- article>header+section#section*9+footer  -->
+
+      <article>
+        <header>
+          <h1>Leonardo DiCaprio</h1>
+
+          <ul>
+            <li><strong>4.7</strong><span>15200</span></li>
+
+            <li><strong>22 of 33</strong><span>Watched Titles</span></li>
+
+            <li><strong>top #4</strong><span>Actors</span></li>
+          </ul>
+        </header>
+
+        <!-- section>h2>ul>li*3>figure>img[alt="a cool movie"]+figcaption -->
+        <section id="movies">
+          <!-- h2{Known for}+ul>li*3>figure>img+figcaption{Movie Title} -->
+
+          <h2>Known for</h2>
+
+          <ul>
+            <li>
+              <figure>
+                <img src="/" alt="Inception" />
+                <figcaption>Inception</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="/" alt="Titanic" />
+                <figcaption>Titanic</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="/" alt="Something else" />
+                <figcaption>Something else</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section id="biography">
+          <!-- h2{Biography}+p{First row}+p{Second row}+button{Read more}
+           -->
+          <h2>Biography</h2>
+
+          <p>
+            Few actors in the world have had a career quite as diverse as
+            Leonardo DiCaprio's.
+          </p>
+
+          <p>
+            DiCaprio has gone from relatively humble beginnings, as a supporting
+            cast member of the sitcom Growing Pains (1985) and low budget horror
+            movies, such as Monstrii 3 (1991), to a major teenage heartthrob in
+            the 1990s, as the hunky lead actor in movies such ...
+          </p>
+
+          <button>Read more</button>
+        </section>
+
+        <section id="filmography">
+          <!-- h2{Filmography}+table>caption{Leonard's work through the years}+thead>tr>th{heading Text}*3^^tbody>tr*3>td{data cell}*3^^^footer>button{back}+p{Page 1 of 10}+button{next} -->
+          <h2>Filmography</h2>
+
+          <table>
+            <caption>
+              Leonardo's work through the years
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Production</th>
+                <th>Year</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Akira</td>
+                <td>2022</td>
+                <td>Producer</td>
+              </tr>
+
+              <tr>
+                <td>Roosevelt</td>
+                <td>2021</td>
+                <td>Actor</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <footer>
+            <button>back</button>
+            <p>Page 1 of 10</p>
+            <button>next</button>
+          </footer>
+        </section>
+
+        <section id="media">
+          <!-- h2{Media}+a{See All}+div>article>header>h3{Career retrospective}+span{1:44}^img+footer>p{some meta info} -->
+
+          <!-- video>source*2+{Download the}+a{webm}+a{mp4} -->
+          <h2>Media</h2>
+          <a href="/">See All</a>
+
+          <div>
+            <article>
+              <header>
+                <h3>Career retrospective</h3>
+                <span>1:44</span>
+              </header>
+
+              <img src="" alt="A studio with microphones" />
+
+              <footer>
+                <p>Some meta info</p>
+              </footer>
+            </article>
+
+            <video controls width="250" style="display: none">
+              <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+
+              <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+
+              Download the
+              <a href="/media/cc0-videos/flower.webm">WEBM</a>
+              or
+              <a href="/media/cc0-videos/flower.mp4">MP4</a>
+              video.
+            </video>
+          </div>
+
+          <ul>
+            <li>
+              <article>
+                <!-- bad -->
+                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a -->
+                <a href="">
+                  <h1>Toasting</h1>
+                  <img src="/" alt="Toasting" />
+                </a>
+              </article>
+            </li>
+
+            <li>
+              <!-- good -->
+              <article>
+                <h1>Once upon a time</h1>
+                <img src="/" alt="Once upon a time" />
+                <a href="/">Full podcast</a>
+              </article>
+            </li>
+
+            <li>
+              <article>
+                <h1>Something else</h1>
+                <img src="/" alt="Something else" />
+                <a href="/">See full video</a>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section id="images">
+          <!-- h2{Images}+a{See all}+ul>li*3>figure>img+figcaption{Caption for the image} -->
+          <h2>Images</h2>
+
+          <!-- bad, see all, what all? -->
+          <a href="/">See all</a>
+
+          <!-- good -->
+          <a href="">See all <span class="sr-only">Leo's images</span></a>
+
+          <ul>
+            <li>
+              <figure>
+                <img src="/" alt="Leonardo with a cigar in his hand" />
+                <figcaption>From the Kink of Cool movie</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img src="/" alt="jack kissing rose in front of the titanic" />
+                <figcaption>From the Titanic movie</figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <img
+                  src="/"
+                  alt="Something interesting is happening in this image"
+                />
+                <figcaption>Leo in another cool movie</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section id="news">
+          <h2>Related news</h2>
+          <!-- h2{Related new}+ul>li*3>article>header>time[datetime="2022-07-07"]{11 hours ago}+h3{The best movies on HBO Max Right Now}^p{If you're trying to figure out what to watch next ...} -->
+
+          <ul>
+            <li>
+              <article>
+                <header>
+                  <time datetime="2022-07-07">11 hours ago</time>
+                  <h3>The best Movies on HBO Max Right Now</h3>
+                </header>
+
+                <p>If you're trying to figure out what to watch ... Lorem</p>
+              </article>
+            </li>
+
+            <li>
+              <article>
+                <header>
+                  <time datetime="2018-07-07">11 hours ago</time>
+                  <h3>The best Movies on HBO Max Right Now</h3>
+                </header>
+
+                <p>If you're trying to figure out what to watch ... Lorem</p>
+              </article>
+            </li>
+
+            <li>
+              <article>
+                <header>
+                  <time datetime="2018-07-07">11 hours ago</time>
+                  <h3>The best Movies on HBO Max Right Now</h3>
+                </header>
+
+                <p>If you're trying to figure out what to watch ... Lorem</p>
+              </article>
+            </li>
+          </ul>
+
+          <button>Read more</button>
+        </section>
+
+        <section id="comment">
+          <!-- h2{Leave a comment}+p{Your opinion matters.}+form[action="post"]>div>label{Your comment}+textarea+span{max. 50 chars}^button[type="submit"]{Leave a comment} -->
+
+          <h2>Leave a comment</h2>
+          <p>
+            Your opinion matters. What’s your opinion about Leonardo DiCaprio’s
+            career? What role did you like the most?
+          </p>
+
+          <form action="post">
+            <fieldset>
+              <label for="comment">Your comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <span> max. 500 characters</span>
+            </fieldset>
+
+            <button type="submit">Leave a comment</button>
+          </form>
+        </section>
+
+        <section id="comments">
+          <!-- h2{Comments}+a{See all comments}+ul>li>article>q[cite="de-unde-e-citatul"]{I love Leonardo}+footer>address>img>h4{Romina Baltariu}+p{Creative Director at Something}+a{LinkedIn Profile} -->
+          <h2>Comments</h2>
+
+          <a href="/">See all comments</a>
+
+          <ul>
+            <li>
+              <article>
+                <q cite="link-de-unde-e-citatul"
+                  >I love Leonardo DiCaprio! I've watched all of his movies and
+                  I think he is the best actor ever.</q
+                >
+
+                <footer>
+                  <address>
+                    <img src="/" alt="A girl with red hair" />
+                    <h4>Romina Baltariu</h4>
+                    <p>Creative Director at MegaFancySomething</p>
+                    <a href="/">LinkedIn profile</a>
+                  </address>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <footer>
+          <p>The author of this article is Someone with a sense of humor</p>
+        </footer>
+      </article>
+    </main>
+
+    <footer class="container">
+      <p>Current Date</p>
+      <a href="/">ActoKedavra</a>
+    </footer>
+  </body>
+</html>
